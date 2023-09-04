@@ -4,7 +4,6 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -64,10 +63,6 @@ public class Server {
             catch(Exception e){
                 e.printStackTrace();
             }
-            PrintWriter out = new PrintWriter(clientSocket.getOutputStream());
-            out.println("Tchau!");
-            out.close();
-            clientSocket.close();
         }
 
     }
